@@ -1,0 +1,36 @@
+Levantar kafka:
+bin/kafka-server-start.sh config/kraft/server.properties
+
+
+List topicos:
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+Crear un nuevo topico con el default config:
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic my.new.topic
+
+Mas información de un topico
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic my.new.topic
+
+Nodificar particiones de un topico
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --alter --topic my.new.topic --partitions 3
+
+Eliminar topico
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic my.new.topic
+
+Listar los grupos de consumidores
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+
+conectarme como consumer en un grupo:
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic order.created --group dispatch.order.created.consumer
+
+Mirar en que partición esta el grupo x de consumidor
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group dispatch.order.created.consumer
+
+Mirar el estado de un grupo de consumidores
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group dispatch.order.created.consumer --state
+
+Mirar los miembros del grupo
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group dispatch.order.created.consumer --members
+
+Conectarme como producer:
+bin/kafka-console-producer.sh --topic order.created.custom --bootstrap-server localhost:9092
