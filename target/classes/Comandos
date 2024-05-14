@@ -1,6 +1,17 @@
 Levantar kafka:
+
+    En caso que nos de un error -> No readable meta.properties files found.
+
+    KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+
+    echo $KAFKA_CLUSTER_ID
+
+    bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties
+
 bin/kafka-server-start.sh config/kraft/server.properties
 
+Parar kafka:
+bin/kafka-server-stop.sh
 
 List topicos:
 bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
@@ -24,7 +35,7 @@ conectarme como consumer en un grupo:
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic order.created --group dispatch.order.created.consumer
 
 Mirar en que partición esta el grupo x de consumidor
-bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group dispatch.order.created.consumer
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group dispatch.order.created.consumer.custom
 
 Mirar el estado de un grupo de consumidores
 bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group dispatch.order.created.consumer --state

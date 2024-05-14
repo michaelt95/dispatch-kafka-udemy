@@ -1,5 +1,6 @@
 /Users/matorres/Documents/kafka-udemy/dispatch-kafka-udemy/src/main/java/dev/michaelt95/dispatchkafkaudemy/handler/OrderCreatedHandler.java
 /Users/matorres/Documents/kafka-udemy/dispatch-kafka-udemy/src/main/java/dev/michaelt95/dispatchkafkaudemy/DispatchConfiguration.java
+/Users/matorres/Documents/kafka-udemy/dispatch-kafka-udemy/src/main/java/dev/michaelt95/dispatchkafkaudemy/message/OrderDispatched.java
 /Users/matorres/Documents/kafka-udemy/dispatch-kafka-udemy/src/main/java/dev/michaelt95/dispatchkafkaudemy/DispatchKafkaUdemyApplication.java
 /Users/matorres/Documents/kafka-udemy/dispatch-kafka-udemy/src/main/java/dev/michaelt95/dispatchkafkaudemy/message/OrderCreated.java
 /Users/matorres/Documents/kafka-udemy/dispatch-kafka-udemy/src/main/java/dev/michaelt95/dispatchkafkaudemy/service/DispatchService.java

@@ -1,4 +1,6 @@
 dev/michaelt95/dispatchkafkaudemy/DispatchConfiguration.class
+dev/michaelt95/dispatchkafkaudemy/message/OrderDispatched$OrderDispatchedBuilder.class
+dev/michaelt95/dispatchkafkaudemy/message/OrderDispatched.class
 dev/michaelt95/dispatchkafkaudemy/message/OrderCreated$OrderCreatedBuilder.class
 dev/michaelt95/dispatchkafkaudemy/DispatchKafkaUdemyApplication.class
 dev/michaelt95/dispatchkafkaudemy/service/DispatchService.class

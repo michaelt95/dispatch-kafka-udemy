@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: dev.michaelt95.dispatchkafkaudemy.service.DispatchServiceTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in dev.michaelt95.dispatchkafkaudemy.service.DispatchServiceTest
